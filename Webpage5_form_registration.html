@@ -1,0 +1,46 @@
+<html>
+	<head></head>
+	<body>
+		<h1>Working with Forms in HTML</h1>
+		<hr/>
+		
+		<form  action="Register.php"   method="post">
+				<fieldset>
+					<legend>User Registration Form</legend>
+					
+					User Id  :   <input  type="text" id="t1"  name="t1"  required  />
+					<br/><br/>
+					Password  :   <input  type="password" id="t2" name="t2"  />
+					<br/><br/>
+					Retype Password  :   <input  type="password" id="t3" name="t3"  />					
+					<br/><br/>
+					
+					Gender :    
+						<input  type="radio" id="r1"  name="r1"  value="Male"  />  Male
+						<input  type="radio" id="r2"  name="r1" value="Female"  />  Female					
+						<br/><br/>
+						
+						Qualification :   
+						<select  name="s1"  id="s1">
+							<option>B.Tech</option>
+							<option>BCA</option>
+							<option  selected>MCA</option>
+							<option>M.Tech</option>
+							<option>Others </option>
+						</select>
+						<br/><br/>
+						
+						Tell me about yourself:   <br/>
+						<textarea  id="ta1"  name="ta1"   rows="6"  cols="40"></textarea>
+							<br/><br/>
+							
+							Are you agree terms and conditions?  
+							<input type="checkbox" value="Yes"  name="ck1"  id="ck1" />
+										<br/><br/>
+						<input type="submit"  value="Register"  />					
+						<input type="reset"  value="Clear Fields"  />					
+				</fieldset>
+		</form>
+	
+	</body>
+</html>

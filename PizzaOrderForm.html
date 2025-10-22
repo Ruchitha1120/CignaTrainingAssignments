@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Italian Pizza Order Form</title>
+</head>
+<body>
+
+  <h2>WELCOME TO ITALIAN PIZZA!</h2>
+  <p>We deliver pizza in 40 minutes max. If not - Pizza's on us!</p>
+
+  <form action="order.php" method="post">
+    <fieldset>
+        <legend>Order your food here</legend>
+    <p>
+      <label>Email:</label><br>
+      <input autofocus type="email" name="email" required>
+    </p>
+
+    <p>
+      <label>Phone:</label><br>
+      <input type="text" name="area_code" size="2" placeholder="Area" required>
+      <input type="text" name="local_code" size="5" placeholder="Local" required>
+      <input type="text" name="number" size="5" placeholder="Local" required>
+    </p>
+
+    <p>
+      <label>Number of slices:</label><br>
+      <input type="number" name="slices" min="1" max="20" required>
+    </p>
+
+    <p>
+      <label>Pizza Size:</label><br>
+      <input type="radio" name="size" value="8-inch" checked> 8-inch
+      <input type="radio" name="size" value="10-inch"> 10-inch
+      <input type="radio" name="size" value="12-inch"> 12-inch
+      <input type="radio" name="size" value="14-inch"> 14-inch
+    </p>
+
+    <p>
+      <label>Toppings:</label><br>
+      <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni
+      <input type="checkbox" name="topping" value="Onions"> Onions
+      <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms
+      <input type="checkbox" name="topping" value="Sausage"> Sausage
+    </p>
+
+    <p>
+      <input type="checkbox" name="agree" required>
+      <label>I agree to the TERMS AND CONDITIONS</label> <span style="color:red">*</span>
+    </p>
+
+    <p>
+      <button type="submit">Order Now</button>
+    </p>
+    </fieldset>
+
+  </form>
+
+</body>
+</html>
